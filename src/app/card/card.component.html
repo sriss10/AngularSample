@@ -1,0 +1,42 @@
+<h1 class="welcome_note">Welcome! {{ username }}</h1>
+<div class="header">
+
+        <li>
+            <mat-form-field appearance="fill" class="Dropdown">
+                <mat-label style="color: #17089B;">Select Category</mat-label>
+                <mat-select class="panel" [(value)]="selected">
+                    <mat-option>All Survey</mat-option>
+                    <mat-option value="Onboarding">Onboarding</mat-option>
+                    <mat-option value="Resignation">Resignation</mat-option>
+                    <mat-option value="Other">Other</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </li>
+        <li>
+            <button mat-raised-button color="primary" class="create">Create Survey</button>
+        </li>
+
+    
+    
+</div>
+<div class="content">
+    
+    <div fxLayout="row wrap" fxLayoutGap="25px grid">
+        <div fxFlex="33%" fxFlex.xs="100%" fxFlex.sm="50%" *ngFor="let num of [1,2,3,4,5]">
+            <mat-card class="mat-elevation-z8">
+                <div class="boundary">
+                    <mat-card-title style="color: #EDF8FF; font-size: 22px;">{{ surveyName }}</mat-card-title>
+                    <br>
+
+                    <mat-card-subtitle style="font-size: 15px;">{{ surveyType }}</mat-card-subtitle>
+                    <br>
+                    <mat-card-actions>
+                        <button mat-button class="view">VIEW</button>
+                    </mat-card-actions>
+                </div>
+            </mat-card>
+        </div>
+    </div>
+
+
+</div>

@@ -1,0 +1,25 @@
+.create{
+    position: absolute;
+    right: 10px;
+    margin-right: 75px;
+    background-color: #17089b;
+    height: 45px;
+    border-radius: 8px;  
+}
+.back{
+    margin-left: 75px;
+    left: 10px;
+    background-color: #46A4E8;
+    color: #17089b;
+    height: 45px;
+    border-radius: 8px; 
+    position: absolute;
+}
+.header{
+    padding-top: 20px;
+    padding-bottom:  10px;
+}
+.content{
+    padding-top: 75px;
+    padding: 75px;
+}
